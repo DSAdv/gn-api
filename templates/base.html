@@ -13,7 +13,25 @@
         {% endif %}
     </head>
     <body>
-        <div>Gorgona's Neurons blog: <a href="/index">Home</a></div>
+        <div>
+            Gorgona's Neurons blog:
+            <a href="/index">Home</a>
+            <a href="/login">Login</a>
+        </div>
+        <hr>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        {% endwith %}
+
+        {% endfor %}
+
+
         {% block content %}{% endblock %}
 
     </body>
