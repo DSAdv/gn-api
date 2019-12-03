@@ -12,6 +12,7 @@ flask-sqlalchemy = "*"
 requests = "*"
 flask-wtf = "*"
 pylint = "*"
+flask-migrate = "*"
 
 [requires]
 python_version = "3.7"

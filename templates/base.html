@@ -17,7 +17,7 @@
         <div>
             Gorgona's Neurons blog:
             <a href="/index">Home</a>
-            <a href="/login">Login</a>
+            <a href="{{ url_for("login") }}">Login</a>
         </div>
         <hr>
         {% with messages = get_flashed_messages() %}
